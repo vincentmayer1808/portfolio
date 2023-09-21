@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <>
       <div className="text-center">
-        {/* <img src='' alt='cyberpunk computer'/> */}
+        <img src='./images/cyberpunkBG.jpg' alt='cyberpunk computer'/>
         <h1 className="text-5xl text-amber-300 font-bold">
           Elevate your business to the Web level!
         </h1>

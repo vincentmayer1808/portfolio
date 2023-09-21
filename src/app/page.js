@@ -10,7 +10,7 @@ export default function Home() {
       <main className="bg-sky-950 text-center">
         <div
           className="bg-scroll ..."
-          style="background-image:url(./images/cyberpunkBG.jpg) "
+          // style={background-image : url(./images/cyberpunkBG.jpg) }
         >
           <section id="aboutMe" className="h-screen">
         
