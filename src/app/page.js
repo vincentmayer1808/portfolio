@@ -8,11 +8,8 @@ export default function Home() {
   return (
     <>
       <main className="bg-sky-950 text-center">
-        <div
-          className="bg-scroll ..."
-          // style={background-image : url(./images/cyberpunkBG.jpg) }
-        >
-          <section id="aboutMe" className="h-screen">
+    
+          <section id="aboutMe">
         
             <About />
           </section>
@@ -22,7 +19,7 @@ export default function Home() {
           <section id="contact">
             <Contact />
           </section>
-        </div>
+       
       </main>
     </>
   );

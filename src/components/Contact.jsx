@@ -103,7 +103,7 @@ export const Contact = () => {
               />
             </div>
             <button
-              className="bg-fuchsia-600 rounded p-2 hover:shadow-fuchsia-600"
+              className="bg-fuchsia-600 rounded p-2 hover:shadow-xl hover:shadow-fuchsia-600"
               id="contactButton"
               type="submit"
               onClick={handleSubmit}
