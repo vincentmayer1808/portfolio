@@ -29,15 +29,15 @@ const DefaultCarousel = () => {
               <div className="flex justify-center gap-2">
                 <a
                   href="#"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:shadow-xl hover:shadow-fuchsia-600"
-                >
+                  className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
+                  >
                   GitHub repositorie
                   <GitHubIcon />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:shadow-xl hover:shadow-fuchsia-600"
-                >
+                  className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
+                  >
                   Deployed site
                   <svg
                     className="w-3.5 h-3.5 ml-2"

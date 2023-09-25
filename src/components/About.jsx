@@ -26,13 +26,13 @@ export const About = () => {
             <div className="flex items-center justify-center gap-2">
               <Link
                 href="/products"
-                className="flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:shadow-lg hover:shadow-fuchsia-600"
+                className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
               >
                 What I can do
               </Link>
               <Link
                 href="/presentation"
-                className="flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:shadow-lg hover:shadow-fuchsia-600"
+                className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
               >
                 My profile
               </Link>

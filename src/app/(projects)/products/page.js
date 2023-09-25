@@ -1,12 +1,17 @@
+import { Product } from "@/components/Product";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
+    <div className="text-center text-cyan-300 bg-sky-950">
+      <h2>Get more XP with a personal website!</h2>
       <p>
-        Time to get a personal website for your business? From a simple landing
-        page to a complex e-commerce, I will make your dreams come true!
+        From a simple landing page to a complex e-commerce, get the XP you need
+        and Level Up!
       </p>
+      <section>
+<Product/>
+      </section>
     </div>
   );
 };

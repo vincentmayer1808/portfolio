@@ -9,6 +9,7 @@ import {
   HiUser,
   HiViewBoards,
 } from "react-icons/hi";
+import { Language } from "./Language";
 // fushia : #c026d3 => fuchsia-600
 // bg : #082f49 => sky-950
 // cyan-300 => #67e8f9
@@ -39,12 +40,12 @@ const Sidenavbar = () => {
     </svg>
   </button>
   
-    <Sidebar id="logo-sidebar" aria-label="Navegation Sidebar"  className=" bg-sky-950 fixed z-40 left-0 w-64 border-r-4 border-fuchsia-600 h-screen text-cyan-300 transition-transform -translate-x-full sm:translate-x-0 ">
+    <Sidebar id="logo-sidebar" aria-label="Navegation Sidebar"  className=" bg-sky-950 fixed z-40 left-0 w-64 border-r-4 border-amber-300 h-screen text-cyan-300 transition-transform -translate-x-full sm:translate-x-0 ">
       <Sidebar.Logo
         href="/"
-        className=" bg-sky-950 border-b-4 border-fuchsia-600  text-cyan-300"
+        className=" bg-sky-950 border-b-4 border-amber-300 text-cyan-300"
       >
-        <p className="hover:text-fuchsia-600">Vincent Mayer</p>
+        <p className="hover:text-fuchsia-600 mb-2">Vincent Mayer</p>
       </Sidebar.Logo>
       <Sidebar.Items>
         <Sidebar.ItemGroup className="bg-sky-950 text-cyan-300">
@@ -60,10 +61,15 @@ const Sidenavbar = () => {
             </Sidebar.Item>
           </Sidebar.Collapse>
           <Sidebar.Item className="hover:bg-fuchsia-600" icon={HiUser} href="/presentation">
-           <p className="text-cyan-300">Get to know me better</p> 
+           <p className="text-cyan-300">Know me better</p> 
           </Sidebar.Item>
           <Sidebar.Item icon={HiGlobeAlt} href="/products" className="hover:bg-fuchsia-600">
            <p className="text-cyan-300">Get your Own Web Site</p> 
+          </Sidebar.Item>
+        </Sidebar.ItemGroup>
+        <Sidebar.ItemGroup>
+          <Sidebar.Item>
+            <Language/>
           </Sidebar.Item>
         </Sidebar.ItemGroup>
       </Sidebar.Items>

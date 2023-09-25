@@ -1,69 +1,72 @@
-"use client"
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 
 export const Contact = () => {
-    const initForm = {
-        username: "",
-        email: "",
-        consult: "",
-      };
-    
-      const [formState, setFormState] = useState(initForm);
-      const [isLoading, setIsLoading] = useState(false);
-      const onChangeForm = ({ target }) => {
-        setFormState({
-          ...formState,
-          [target.name]: target.value,
-        });
-        console.log(formState);
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsLoading(true);
-             console.log(formState)
-        const { username, consult, email } = formState;
-        if (username === "" || email === "" || consult === "") {
-          window.alert("Debe llenar los campos de nombre, correo y comsulta");
-        } else {
-          await addToDB(formState);
-        }
-        setIsLoading(false);
-    
-      };
-      const addToDB = async () => {
-        try {
-            console.log("sending message")
-       
-        //   await axios.post(
-        //     "URL",
-        //     formState,
-        //     {
-        //       headers: {
-        //         "Content-Type": "application/json",
-        //       },
-        //     }
-        //   );
-        //   window.alert("I will respond as soon as I read it, thanks for contacting me!");
-        } catch (err) {
-          window.alert("An error ocurred and I couldn,t receive your message, please try again!");
-        }
-      };
-    
+  const initForm = {
+    username: "",
+    email: "",
+    consult: "",
+  };
+
+  const [formState, setFormState] = useState(initForm);
+  const [isLoading, setIsLoading] = useState(false);
+  const onChangeForm = ({ target }) => {
+    setFormState({
+      ...formState,
+      [target.name]: target.value,
+    });
+    console.log(formState);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    console.log(formState);
+    const { username, consult, email } = formState;
+    if (username === "" || email === "" || consult === "") {
+      window.alert("Debe llenar los campos de nombre, correo y comsulta");
+    } else {
+      await addToDB(formState);
+    }
+    setIsLoading(false);
+  };
+  const addToDB = async () => {
+    try {
+      console.log("sending message");
+
+      //   await axios.post(
+      //     "URL",
+      //     formState,
+      //     {
+      //       headers: {
+      //         "Content-Type": "application/json",
+      //       },
+      //     }
+      //   );
+      //   window.alert("I will respond as soon as I read it, thanks for contacting me!");
+    } catch (err) {
+      window.alert(
+        "An error ocurred and I couldn,t receive your message, please try again!"
+      );
+    }
+  };
 
   return (
-   <>
-     <div className="bg-sky-950">
+    <>
+      <div className="bg-sky-950">
         <div className="flex-col item-center justify-center">
-          <h2 className='font-semibold text-cyan-300'>Contact Me</h2>
-          <p className=' text-cyan-300'>
-           Tell me about your project and lets see how I can help you!
+          <h2 className="font-semibold text-cyan-300">Contact Me</h2>
+          <p className=" text-cyan-300">
+            Tell me about your project and lets see how I can help you!
           </p>
         </div>
         <div className="flex g-2">
           <form>
             <div className="mb-2">
-              <label className="font-medium text-cyan-300 items-center justify-center p-2" htmlFor="username">
+              <label
+                className="font-medium text-cyan-300 items-center justify-center p-2"
+                htmlFor="username"
+              >
                 Your Name
               </label>
               <input
@@ -76,8 +79,11 @@ export const Contact = () => {
               />
             </div>
             <div className="mb-2">
-              <label className="font-medium text-cyan-300 items-center justify-center p-2" htmlFor="email">
-               Your Email
+              <label
+                className="font-medium text-cyan-300 items-center justify-center p-2"
+                htmlFor="email"
+              >
+                Your Email
               </label>
               <input
                 className="bg-sky-950 rounded border-fuchsia-600 p-2"
@@ -89,7 +95,10 @@ export const Contact = () => {
               />
             </div>
             <div className="mb-2">
-              <label className="font-medium text-cyan-300 items-center justify-center p-2" htmlFor="consult">
+              <label
+                className="font-medium text-cyan-300 items-center justify-center p-2"
+                htmlFor="consult"
+              >
                 Tell me what you need
               </label>
               <textarea
@@ -97,13 +106,12 @@ export const Contact = () => {
                 className="bg-sky-950 rounded border-fuchsia-600 p-2"
                 rows="4"
                 cols="50"
-               
                 value={formState.consult}
                 onChange={onChangeForm}
               />
             </div>
             <button
-              className="bg-fuchsia-600 rounded p-2 hover:shadow-xl hover:shadow-fuchsia-600"
+              className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
               id="contactButton"
               type="submit"
               onClick={handleSubmit}
@@ -111,10 +119,9 @@ export const Contact = () => {
             >
               Contact Me
             </button>
-        
           </form>
         </div>
       </div>
-   </>
-  )
-}
+    </>
+  );
+};
