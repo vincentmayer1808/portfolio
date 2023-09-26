@@ -8,6 +8,6 @@ module.exports = {
   ],
   theme: {
   },
-  darkMode: "class",
+  
   plugins: [require("flowbite/plugin")]
 }

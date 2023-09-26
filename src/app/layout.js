@@ -2,7 +2,7 @@
 // import { Navbar } from '@/components/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Sidenavbar from '@/components/Sidebar'
+import Sidenavbar from '@/components/sidebar/Sidebar'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,8 +18,9 @@ export default function RootLayout({ children }) {
       
         {/* <Navbar/> */}
         <Sidenavbar/>
+       <div className="sm:ml-64">
         {children}
-      
+      </div>
     </html>
   )
 }

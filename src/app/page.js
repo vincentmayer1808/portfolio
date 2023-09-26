@@ -9,14 +9,13 @@ export default function Home() {
     <>
       <main className="bg-sky-950 text-center">
     
-          <section id="aboutMe">
-        
+          <section id="aboutMe" className="p-2">
             <About />
           </section>
-          <section id="projectCarousel">
+          <section id="projectCarousel" className="p-2">
             <DefaultCarousel />
           </section>
-          <section id="contact">
+          <section id="contact" className="p-2">
             <Contact />
           </section>
        

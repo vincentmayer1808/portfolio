@@ -6,11 +6,11 @@ import Image from "next/image";
 export const About = () => {
   return (
     <>
-        <h1 className=" mb-2 text-5xl text-center text-amber-300 font-bold">
+        <h1 className=" m-2 text-5xl text-center text-amber-300 font-bold">
           Elevate your business to the Web level!
         </h1>
       <div className="text-center max-w-md mx-auto overflow-hidden md:max-w-2xl">
-        <div className="sm:flex items-center justify-center border-4 border-amber-300 shadow-xl shadow-amber-300 m-6 p-2 text-cyan-300 rounded-br-2xl">
+        <div className="sm:flex items-center justify-center rounded-lg border-2 border-amber-300 shadow-[0_02px#fff,inset_0_02px#fff,0_05px#fcd34d,0_015px#fcd34d,0_030px#fcd34d] m-6 p-2 text-cyan-300 rounded-br-2xl">
           <div className="sm:shrink-0">
 
           <img src="./images/cyberpunkDeveloper.jpg" alt="card image" className="h-48 w-auto md:h-full md:w-48"/>
@@ -23,16 +23,11 @@ export const About = () => {
               <p>Helping small businesses taking their services to the Web!</p>
             </div>
 
-            <div className="flex items-center justify-center gap-2">
-              <Link
-                href="/products"
-                className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
-              >
-                What I can do
-              </Link>
+            <div className="flex items-center justify-center">
+             
               <Link
                 href="/presentation"
-                className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300"
+                className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:text.amber-300 hover:border-2 hover:border-amber-300 hover:shadow-[0_02px#fff,inset_0_02px#fff,0_05px#fcd34d,0_015px#fcd34d,0_030px#fcd34d]"
               >
                 My profile
               </Link>
