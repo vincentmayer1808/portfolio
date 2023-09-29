@@ -1,12 +1,11 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/Icons";
+import { Presentation } from "@/components/Presentation";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
-     
-      <h3>Want to know more about me?</h3>
-      <p></p>
+    <div className="bg-sky-950 text-cyan-300 ">
+    <Presentation/>
     </div>
   );
 };

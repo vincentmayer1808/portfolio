@@ -9,15 +9,9 @@ export default function Home() {
     <>
       <main className="bg-sky-950 text-center">
     
-          <section id="aboutMe" className="p-2">
-            <About />
-          </section>
-          <section id="projectCarousel" className="p-2">
-            <DefaultCarousel />
-          </section>
-          <section id="contact" className="p-2">
-            <Contact />
-          </section>
+            <About id="aboutMe"/>
+            <DefaultCarousel id="projectCarousel" />
+            <Contact id="contact" />
        
       </main>
     </>
