@@ -9,6 +9,7 @@ import {
   HiUser,
   HiViewBoards,
 } from "react-icons/hi";
+import { Contact } from "../Contact";
 // fushia : #c026d3 => fuchsia-600
 // bg : #082f49 => sky-950
 // cyan-300 => #67e8f9
@@ -46,17 +47,14 @@ const Sidenavbar = () => {
       >
         <p className="hover:text-fuchsia-600 mb-2">Vincent Mayer</p>
       </Sidebar.Logo>
-      <Sidebar.Items className="flex-col align-center justify-center">
+      <Sidebar.Items >
         <Sidebar.ItemGroup className="bg-sky-950 text-cyan-300">
           <Sidebar.Collapse label="Home Page" icon={HiHome} className="hover:bg-fuchsia-600 text-cyan-300">
-            <Sidebar.Item href="/#aboutMe" icon={HiChartPie} className="hover:bg-fuchsia-600">
+            <Sidebar.Item href="#aboutMe" icon={HiChartPie} className="hover:bg-fuchsia-600">
               <p className="text-cyan-300">About Me</p>
             </Sidebar.Item>
-            <Sidebar.Item href="/#projectCarousel" icon={HiViewBoards} className="hover:bg-fuchsia-600">
+            <Sidebar.Item href="#projectCarousel" icon={HiViewBoards} className="hover:bg-fuchsia-600">
               <p className="text-cyan-300">My Productions</p>
-            </Sidebar.Item>
-            <Sidebar.Item href="/#contact" icon={HiInbox} className="hover:bg-fuchsia-600">
-              <p className="text-cyan-300">Contact Me</p>
             </Sidebar.Item>
           </Sidebar.Collapse>
           <Sidebar.Item className="hover:bg-fuchsia-600" icon={HiUser} href="/presentation">
@@ -65,6 +63,11 @@ const Sidenavbar = () => {
           <Sidebar.Item icon={HiGlobeAlt} href="/products" className="hover:bg-fuchsia-600">
            <p className="text-cyan-300">Get your Own Web Site</p> 
           </Sidebar.Item>
+        </Sidebar.ItemGroup>
+        <Sidebar.ItemGroup className="border-amber-300">
+          
+          <Contact/>
+          
         </Sidebar.ItemGroup>
       </Sidebar.Items>
     </Sidebar>

@@ -6,8 +6,8 @@ import { Contact } from "./Contact";
 
 export const Presentation = () => {
   return (
-    <div className="p-3">
-      <div className="flex-col justify-center align-center p-3 m-5 rounded-lg border-2 border-amber-300 hover:shadow-xl hover:shadow-amber-300 hover:border-4">
+    <>
+      <div className="flex-col justify-center align-center p-3 rounded-lg ring-2 ring-amber-300 hover:shadow-xl hover:shadow-amber-300 hover:ring-4">
         <h2 className="font-bold text-xl text-center text-amber-300">My XP</h2>
         <p className="text-left mb-2">
           As a recently graduated Wed Developer Full Stack, I discovered a
@@ -17,8 +17,8 @@ export const Presentation = () => {
           use.
         </p>
         <div className="flex items-center mb-2 ">
-          <div className="w-1/3 flex justify-center items-center">
-            <img src="../assets/images/fotopersonal.jpg" alt="photo of me" className="" />
+          <div className="w-1/3 max-h-40 flex justify-center items-center">
+            <img src="../assets/images/fotopersonal.jpg" alt="photo of me"/>
           </div>
           <p className="text-right w-2/3">
             Originary from Québec, Canada, I crossed the whole American
@@ -51,7 +51,7 @@ export const Presentation = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="p-2">
         <h3 className=" my-2 font-bold text-xl text-center text-amber-300">
           SKILLS
         </h3>
@@ -91,7 +91,7 @@ export const Presentation = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="m-3">
         <h3 className="my-3 font-bold text-xl text-center text-amber-300">
           CERTIFICATIONS
         </h3>
@@ -166,9 +166,6 @@ export const Presentation = () => {
           </li>
         </ul>
       </div>
-      <div>
-        <Contact />
-      </div>
-    </div>
+    </>
   );
 };
