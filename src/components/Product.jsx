@@ -7,7 +7,7 @@ export const Product = () => {
     <div className="flex justify-center align-center flex-wrap">
       <div className="flex-col  justify-center  border-4 border-amber-300 p-5 m-5 rounded-lg hover:shadow-2xl hover:shadow-amber-300 hover:bg-sky-900 hover:text-white hover:scale-105 animate__animated animate__fadeInLeft">
         <h3 className="font-medium text-lg text-amber-300">
-          BUSINESS LANDING XP
+          BUSINESS LANDING LEVEL
         </h3>
         <div className="grid grid-cols-3 border-2 border-cyan-300">
           <div className="border-b-2 border-r-2 border-cyan-300">
@@ -34,16 +34,16 @@ export const Product = () => {
         <Levelup/> 
       </div>
       <div className="flex-col justify-center align-center border-4 border-amber-300 p-5 m-5 rounded-lg hover:bg-sky-900 hover:text-white hover:shadow-2xl hover:shadow-amber-300 hover:scale-105 animate__animated animate__fadeInRight">
-        <h3 className="font-medium text-lg text-amber-300">MULTIPLE PAGES XP</h3>
+        <h3 className="font-medium text-lg text-amber-300">MULTIPLE PAGES LEVEL</h3>
         <div className="grid grid-cols-3 border-2 border-cyan-300">
           <div className="border-b-2 border-r-2 border-cyan-300">
             <p>BONUS POINTS</p>
           </div>
           <div className="col-span-2 border-b-2 border-cyan-300">
             <ul className="grid grid-cols-2 gap-2 list-disc list-inside">
-              <li>Multiple Pages with Navegation Links</li>
               <li>Full Catalogue</li>
               <li>Users Management</li>
+              <li>Multiple Pages with Navegation Links</li>
               <li>Business Information and Contact Form</li>
             </ul>
           </div>
@@ -61,16 +61,16 @@ export const Product = () => {
         <Levelup/> 
       </div>
       <div className="flex-col justify-center align-center hover:text-white hover:bg-sky-900 border-4 border-amber-300 p-5 m-5 rounded-lg hover:shadow-2xl hover:shadow-amber-300 hover:scale-105 animate__animated animate__fadeInLeft">
-        <h3 className="font-medium text-lg text-amber-300">E-COMMERCE XP</h3>
+        <h3 className="font-medium text-lg text-amber-300">E-COMMERCE LEVEL</h3>
         <div className="grid grid-cols-3 border-2 border-cyan-300">
           <div className="border-b-2 border-r-2 border-cyan-300">
             <p>BONUS POINTS</p>
           </div>
           <div className="col-span-2 border-b-2 border-cyan-300">
             <ul className="grid grid-cols-2 gap-2 list-disc list-inside">
-              <li >Individual Product Pages</li>
               <li>Payment Management</li>
-              <li>Client Commentaries</li>
+              <li>Clients Reviews</li>
+              <li>Shopping Cart</li>
               <li>SEO</li>
             </ul>
           </div>

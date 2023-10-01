@@ -3,25 +3,29 @@
 import { Carousel } from "flowbite-react";
 import { GitHubIcon } from "./Icons";
 import Link from "next/link";
+import { Levelup } from "./Levelup";
+import Image from "next/image";
 
-const DefaultCarousel = () => {
+export const DefaultCarousel = () => {
   return (
     <div className="w-full h-screen bg-sky-950 text-center">
       <h3 className="text-center text-xl text-amber-300">My Productions</h3>
       <Carousel>
         <div className=" h-full bg-sky-950 ">
-          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-950 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div className="flex justify-center">
-              <img
+              <Image
                 className="rounded-t-lg w-1/2"
-                src="../assets/images/PsicologialosRios.png"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1695472314/PsicologialosRios_zwhpcz.png"
                 alt="website shot"
+                width={160}
+                height={190}
               />
             </div>
             <h5 className=" text-2xl font-bold tracking-tight">
               E-commerce for Psicología los Rios
             </h5>
-            <p className="font-normal ">
+            <p className="font-normal text-white">
               This E-commerce, made with React and Express, offers psychologie
               services letting you see the business profile with contact
               formularie, individual product pages and cart management with
@@ -47,18 +51,20 @@ const DefaultCarousel = () => {
           </div>
         </div>
         <div className=" h-full bg-sky-950 ">
-          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-950 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div className="flex justify-center">
-              <img
+              <Image
                 className="rounded-t-lg w-1/2"
-                src="../assets/images/pronosticoClima.png"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181480/pronosticoClima_mckw9l.webp"
                 alt="website shot"
+                width={160}
+                height={190}
               />
             </div>
             <h5 className=" text-2xl font-bold tracking-tight">
-              ClimaApp API dashboard
+              Clima App API dashboard
             </h5>
-            <p className="font-normal ">
+            <p className="font-normal text-white">
               A group project based on API REST reading and dashboard creating
               about clima on the wanted city.
             </p>
@@ -82,18 +88,20 @@ const DefaultCarousel = () => {
           </div>
         </div>
         <div className=" h-full bg-sky-950 ">
-          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-950 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div className="flex justify-center">
-              <img
+              <Image
                 className="rounded-t-lg w-1/2"
-                src="../assets/images/restaurantReactApp.png"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181483/restaurantReactApp_ahtw1q.webp"
                 alt="website shot"
+                width={160}
+                height={190}
               />
             </div>
             <h5 className=" text-2xl font-bold tracking-tight">
               Restaurant App
             </h5>
-            <p className="font-normal ">
+            <p className="font-normal text-white">
               A React.js and Firebase project of a restaurant application, with
               user management, reservations and contact formularies.
             </p>
@@ -117,18 +125,20 @@ const DefaultCarousel = () => {
           </div>
         </div>
         <div className=" h-full bg-sky-950 ">
-          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-950 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div className="flex justify-center">
-              <img
+              <Image
                 className="rounded-t-lg w-1/2"
-                src="../assets/images/yourRecipeApp.png"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181484/yourRecipeApp_ac6qqh.webp"
                 alt="website shot"
+                width={160}
+                height={190}
               />
             </div>
             <h5 className=" text-2xl font-bold tracking-tight">
               Recipe application
             </h5>
-            <p className="font-normal ">
+            <p className="font-normal text-white">
               A CRUD project with DOM management, it let you create read edit
               and delete a recipe
             </p>
@@ -152,18 +162,20 @@ const DefaultCarousel = () => {
           </div>
         </div>
         <div className=" h-full bg-sky-950 ">
-          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-950 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+          <div className="flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
             <div className="flex justify-center">
-              <img
+              <Image
                 className="rounded-t-lg w-1/2"
-                src="../assets/images/aromeDivine.png"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181471/aromeDivine_soj1s6.webp"
                 alt="website shot"
+                width={160}
+                height={190}
               />
             </div>
             <h5 className=" text-2xl font-bold tracking-tight">
               Business Landing of Arome Divine
             </h5>
-            <p className="font-normal ">
+            <p className="font-normal text-white">
               This simple business landing page is my first website, it does not
               count with special features but let you see the business profile
               and some products with great style
@@ -188,8 +200,12 @@ const DefaultCarousel = () => {
           </div>
         </div>
       </Carousel>
+      <div className="flex flex-col justify-center items-center bg-sky-950 p-2 pb-4">
+        <p className="font-bold text-amber-300">Get something similar</p>
+        <Levelup/>
+      </div>
     </div>
   );
 };
 
-export default DefaultCarousel;
+// export default DefaultCarousel;
