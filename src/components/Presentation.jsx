@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import "animate.css";
 import { GitHubIcon, LinkedInIcon } from "./Icons";
+import Image from "next/image";
 
 export const Presentation = () => {
   return (
@@ -17,8 +18,14 @@ export const Presentation = () => {
           use.
         </p>
         <div className="flex items-center mb-2 ">
-          <div className="w-1/3 flex justify-center items-center">
-            <img src="../assets/images/fotopersonal.jpg" alt="photo of me" />
+          <div className="w-1/3 flex justify-center items-center shrink-0">
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181472/fotopersonal_kq9txx.jpg"
+              alt="photo of me"
+              className="max-h-48 w-auto "
+              width={160}
+              height={190}
+            />
           </div>
           <p className="text-right w-2/3">
             Originary from Québec, Canada, I crossed the whole American
@@ -58,13 +65,28 @@ export const Presentation = () => {
             <p>Languages : HTML 5, CSS 3, JavaScript</p>
             <div className="flex justify-center items-center flex-wrap gap-4">
               <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/html.png" alt="html" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181471/html_pxzoge.webp"
+                  alt="html"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/css.png" alt="css" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/css_ekwf2i.webp"
+                  alt="css"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/js.png" alt="js" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181476/js_pq0azh.webp"
+                  alt="js"
+                  width={160}
+                  height={190}
+                />
               </div>
             </div>
           </div>
@@ -72,10 +94,20 @@ export const Presentation = () => {
             <p>Platforms : Node.js, Firebase</p>
             <div className="flex justify-center items-center flex-wrap gap-4">
               <div className="w-24 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/node.png" alt="node" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181479/node_bhfte2.webp"
+                  alt="node"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24  flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/firebase.png" alt="firebase" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/firebase_ldvsw0.webp"
+                  alt="firebase"
+                  width={160}
+                  height={190}
+                />
               </div>
             </div>
           </div>
@@ -86,19 +118,44 @@ export const Presentation = () => {
             </p>
             <div className="flex justify-center items-center flex-wrap gap-4">
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/bootstrap.png" alt="bootstrap" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/bootstrap_brtiam.webp"
+                  alt="bootstrap"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/react.jpg" alt="react" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181481/react_afulxe.webp"
+                  alt="react"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/next.png" alt="next" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181478/next_luvnm8.webp"
+                  alt="next"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/express.png" alt="express" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/express_ha965h.webp"
+                  alt="express"
+                  width={160}
+                  height={190}
+                />
               </div>
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/tailwind.png" alt="tailwind" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181484/tailwind_jorogn.webp"
+                  alt="tailwind"
+                  width={160}
+                  height={190}
+                />
               </div>
             </div>
           </div>
@@ -106,7 +163,12 @@ export const Presentation = () => {
             <p>Database : MongoDB</p>
             <div className="flex justify-center items-center flex-wrap gap-4">
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/mongodb.png" alt="mongodb" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181478/mongodb_v1sl9e.webp"
+                  alt="mongodb"
+                  width={160}
+                  height={190}
+                />
               </div>
             </div>
           </div>
@@ -114,7 +176,12 @@ export const Presentation = () => {
             <p>Project Management : Github</p>
             <div className="flex justify-center items-center flex-wrap gap-4">
               <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-                <img src="../assets/images/github.png" alt="github" />
+                <Image
+                  src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181471/github_utdt2b.webp"
+                  alt="github"
+                  width={160}
+                  height={190}
+                />
               </div>
             </div>
           </div>
@@ -126,10 +193,11 @@ export const Presentation = () => {
         </h3>
         <ul className="flex flex-wrap justify-center items-center gap-2">
           <li className="flex hover:scale-125 justify-center items-center">
-            <img
-              src="../assets/images/react-js-firebase-restaurant-app-sobresaliente.png"
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181481/react-js-firebase-restaurant-app-sobresaliente_hd5jm7.webp"
               alt=" react badge"
-              width={100}
+              width={160}
+              height={160}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">
@@ -146,10 +214,11 @@ export const Presentation = () => {
             </div>
           </li>
           <li className="flex justify-center items-center hover:scale-125">
-            <img
-              src="../assets/images/api-react-js-dashboard-sobresaliente.png"
-              alt=""
-              width={100}
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/api-react-js-dashboard-sobresaliente_qs3d0t.webp"
+              alt="API badge"
+              width={160}
+              height={160}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">
@@ -166,10 +235,11 @@ export const Presentation = () => {
             </div>
           </li>
           <li className="flex justify-center items-center hover:scale-125">
-            <img
-              src="../assets/images/crud-dom-web-app-sobresaliente.png"
-              alt=""
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181471/crud-dom-web-app-sobresaliente_ya5txr.webp"
+              alt="DOM badge"
               width={100}
+              height={100}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">
@@ -186,10 +256,11 @@ export const Presentation = () => {
             </div>
           </li>
           <li className="flex justify-center items-center hover:scale-125">
-            <img
-              src="../assets/images/html-css-landing-page-sobresaliente.png"
-              alt=""
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181471/html-css-landing-page-sobresaliente_wyqxre.webp"
+              alt="html/css badge"
               width={100}
+              height={100}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">
@@ -203,13 +274,14 @@ export const Presentation = () => {
               >
                 See Badge
               </Link>
+              
             </div>
           </li>
         </ul>
       </div>
       <div className="text-center">
         <h3 className=" my-2 font-bold text-xl text-amber-300">MY CONTACT</h3>
-          <p>Email : vincent.mayer.1808@gmail.com</p>
+        <p>Email : vincent.mayer.1808@gmail.com</p>
         <div className="flex justify-center items-center flex-wrap gap-4">
           <Link
             href="https://linkedin.com/in/vincent-mayer"

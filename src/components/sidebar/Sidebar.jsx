@@ -3,16 +3,17 @@ import "./sidebar.css";
 import { Sidebar } from "flowbite-react";
 import { HiGlobeAlt, HiHome, HiUser } from "react-icons/hi";
 import { Contact } from "../Contact";
+import { Footer } from "../Footer";
 
-const Sidenavbar = () => {
+export const Sidenavbar = () => {
   return (
     <>
       <button
-        datadrawertarget="logo-sidebar"
-        datadrawertoggle="logo-sidebar"
-        aria_controls="logo-sidebar"
+        datadrawertarget="default-sidebar"
+        datadrawertoggle="default-sidebar"
+        aria_controls="Sidebar"
         type="button"
-        className="fixed inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm_hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        className="fixed inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
         <span className="sr-only">Open sidebar</span>
         <svg
@@ -23,16 +24,15 @@ const Sidenavbar = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            clip_rule="evenodd"
-            fill_rule="evenodd"
+            clipRule="evenodd"
+            fillRule="evenodd"
             d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
           ></path>
         </svg>
       </button>
 
       <Sidebar
-        id="logo-sidebar"
-        aria-label="logo-sidebar"
+        id="default-sidebar"
         className="bg-sky-950 fixed z-40 left-0 w-64 border-r-2 border-amber-300 h-screen text-cyan-300 transition-transform -translate-x-full sm:translate-x-0 "
       >
         <Sidebar.Logo
@@ -70,8 +70,7 @@ const Sidenavbar = () => {
           </Sidebar.ItemGroup>
         </Sidebar.Items>
       </Sidebar>
+      <Footer />
     </>
   );
 };
-
-export default Sidenavbar;
