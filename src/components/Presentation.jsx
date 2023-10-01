@@ -1,13 +1,12 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-
-import { Contact } from "./Contact";
+import "animate.css"
 
 export const Presentation = () => {
   return (
-    <>
-      <div className="flex-col justify-center align-center p-3 rounded-lg ring-2 ring-amber-300 hover:shadow-xl hover:shadow-amber-300 hover:ring-4">
+    <div className="bg-sky-950 p-5 text-cyan-300">
+      <div className="flex-col justify-center align-center p-3 rounded-lg ring-2 ring-amber-300 hover:shadow-xl hover:shadow-amber-300 hover:ring-4 animate__animated animate__flipInY">
         <h2 className="font-bold text-xl text-center text-amber-300">My XP</h2>
         <p className="text-left mb-2">
           As a recently graduated Wed Developer Full Stack, I discovered a
@@ -17,7 +16,7 @@ export const Presentation = () => {
           use.
         </p>
         <div className="flex items-center mb-2 ">
-          <div className="w-1/3 max-h-40 flex justify-center items-center">
+          <div className="w-1/3 max-h-20 flex justify-center items-center">
             <img src="../assets/images/fotopersonal.jpg" alt="photo of me"/>
           </div>
           <p className="text-right w-2/3">
@@ -56,37 +55,37 @@ export const Presentation = () => {
           SKILLS
         </h3>
         <div className="flex justify-center items-center flex-wrap gap-4">
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/css.png" alt="css" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/html.png" alt="html" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/js.png" alt="js" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/bootstrap.png" alt="bootstrap" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/react.jpg" alt="react" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/mongodb.png" alt="mongodb" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/node.png" alt="node" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/next.png" alt="next" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/express.png" alt="express" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/firebase.png" alt="firebase" />
           </div>
-          <div className="w-32 h-40 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
             <img src="../assets/images/tailwind.png" alt="tailwind" />
           </div>
         </div>
@@ -158,7 +157,7 @@ export const Presentation = () => {
               <Link
                 target="_blank"
                 className="hover:text-white hover:font-semibold"
-                href="https://www.credly.com/badges/6e8b325d-1038-40c0-a51d-6698e5f02d0a/public_url"
+                href="https://www.credly.com/badges/6e8b245d-32 f-40c0-a51d-6698e5f02d0a/public_url"
               >
                 See Badge
               </Link>
@@ -166,6 +165,6 @@ export const Presentation = () => {
           </li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };

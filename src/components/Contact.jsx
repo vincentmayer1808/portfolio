@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { db } from "../firebase/firebase";
-import { Button, Modal } from "flowbite-react";
+import {  Modal } from "flowbite-react";
+import "animate.css"
 
 export const Contact = () => {
   const initForm = {
@@ -26,7 +27,7 @@ export const Contact = () => {
     setIsLoading(true);
     const { username, consult, email } = formState;
     if (username === "" || email === "" || consult === "") {
-      window.alert("Debe llenar los campos de nombre, correo y comsulta");
+      window.alert("Please, fill all fields!");
     } else {
       await addToDB(formState);
     }
@@ -35,12 +36,12 @@ export const Contact = () => {
   const addToDB = async (info) => {
     try {
       await db.collection("contact").add(info);
-      console.log("message sent");
+      // console.log("message sent");
       setFormState(initForm);
  
-      // window.alert("I will respond as soon as posible, thanks for contacting me!");
+      window.alert("I will respond as soon as posible, thanks for contacting me!");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       window.alert(
         "An error ocurred and I couldn,t receive your message, please try again!"
       );
@@ -61,6 +62,7 @@ export const Contact = () => {
         size="lg"
         popup
         onClose={() => props.setOpenModal(undefined)}
+        className="animate__animated animate__bounceIn"
       >
         <div  className="bg-sky-950 rounded-lg border-4 border-amber-300 shadow-2xl shadow-amber-300">
         <Modal.Header/>

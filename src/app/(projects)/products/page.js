@@ -5,16 +5,27 @@ const page = () => {
   return (
     <div className="text-center text-cyan-300 bg-sky-950">
       <div className="p-3">
-      <h2 className="font-medium text-lg text-amber-300">Get more XP with a personal website!</h2>
-      <p>
-        From a simple landing page to a complex e-commerce, get the XP you need
-        and Level Up!
-      </p>
-      <span>Note: that these features are only referencial. Ask me what you need and we will make things come true!</span>
+        <h2 className="font-semibold text-xl text-amber-300">
+          Get more XP with a personal website!
+        </h2>
+        <p>
+          From a simple landing page to a complex e-commerce, get the XP you
+          need and Level Up!
+        </p>
+        <p>
+          <span className="font-medium text-amber-300">Note:</span> these
+          features are only referencial. Tell me what you need and I will make
+          things come true!
+        </p>
       </div>
       <section>
-<Product/>
+        <Product />
       </section>
+      <div className="pb-3">
+        <p className="font-semibold text-lg text-amber-300 text-center">
+          Remember, everything is possible! Lets talk about it!
+        </p>
+      </div>
     </div>
   );
 };

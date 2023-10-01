@@ -1,34 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## My Portfolio
 
-First, run the development server:
+When the user first gets to my page he will feel like entering a video game since the used terms are reminders of the 80's games.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+ The user will see a simple sidebar that is used as navigation throught the three different pages. At the bottom of the sidebar, there is a contact button component that trigger the contact formularie.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ The home page shows a personal business card with LinkedIn and Github links as well as a button that takes the user to the presentation page. Scrolling down the home page, the public can appreciate a carousel that displays the different projects I took part in.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The presentation page shows a larger description of myself with a serious picture of me so the possible clients can link a face to my profile. Passing over my experience, the user will get to my skills's section and later on he'll get to my certifications list.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The third and last page of this simple portfolio shows possible web applications ideas that help the client imagine what he wants. Levelling up by pressing the button will simply permit to fill another formularie while I elaborate a better system of reservation. 
 
-## Learn More
+## Frameworks and Libraries
 
-To learn more about Next.js, take a look at the following resources:
+My portfolio has been made with Next.js and Firebase since it wasn't needed to levantate a full back-end. There is not much information to manage yet, excepts from my personal information and projects, there are two formularies possible, which, for the moment, both datas are kept in Firebase with the further intention to send those informations to my email.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I tried to design a futuristic cyber punk world with tailwind, which lead the user to fill like a gamer that got the mission to level up his business. Appart of hovers and focuses, I couldn't make great animations but I still used animatedCSS to give a little bit more life to the site.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Further On 
 
-## Deploy on Vercel
+I don't think this is the best looking page nor the best user experience but I do believe that it's impossible to get lost. I have many great ideas to level up my portfolio like a reservation system, or a greater design and better SEO but my actual worktool (computer) doesn't follow me on this one and I'll have to leave it for the future! 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I still have a lot to learn, but I'm happy of what I can do and I hope you'll enjoy it. I appreciate all feedbacks since this project will always stay in development while I keep learning!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
