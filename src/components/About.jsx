@@ -31,12 +31,12 @@ export const About = () => {
               >
                 My profile
               </Link>
-              <a href="https://linkedin.com/in/vincent-mayer" target="_blank" className="w-8 hover:scale-110">
+              <Link href="https://linkedin.com/in/vincent-mayer" target="_blank" className="w-8 hover:scale-110">
                 <LinkedInIcon />
-              </a>
-              <a href="https://github.com/vincentmayer1808" target="_blank" className="w-8 hover:scale-110">
+              </Link>
+              <Link href="https://github.com/vincentmayer1808" target="_blank" className="w-8 hover:scale-110">
                 <GitHubIcon />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

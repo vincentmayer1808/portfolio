@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import "animate.css"
+import "animate.css";
+import { GitHubIcon, LinkedInIcon } from "./Icons";
 
 export const Presentation = () => {
   return (
@@ -16,8 +17,8 @@ export const Presentation = () => {
           use.
         </p>
         <div className="flex items-center mb-2 ">
-          <div className="w-1/3 max-h-20 flex justify-center items-center">
-            <img src="../assets/images/fotopersonal.jpg" alt="photo of me"/>
+          <div className="w-1/3 flex justify-center items-center">
+            <img src="../assets/images/fotopersonal.jpg" alt="photo of me" />
           </div>
           <p className="text-right w-2/3">
             Originary from Québec, Canada, I crossed the whole American
@@ -50,43 +51,72 @@ export const Presentation = () => {
           </Link>
         </div>
       </div>
-      <div className="p-2">
-        <h3 className=" my-2 font-bold text-xl text-center text-amber-300">
-          SKILLS
-        </h3>
+      <div className="p-2 text-center">
+        <h3 className=" my-2 font-bold text-xl text-amber-300">SKILLS</h3>
         <div className="flex justify-center items-center flex-wrap gap-4">
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/css.png" alt="css" />
+          <div>
+            <p>Languages : HTML 5, CSS 3, JavaScript</p>
+            <div className="flex justify-center items-center flex-wrap gap-4">
+              <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/html.png" alt="html" />
+              </div>
+              <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/css.png" alt="css" />
+              </div>
+              <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/js.png" alt="js" />
+              </div>
+            </div>
           </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/html.png" alt="html" />
+          <div>
+            <p>Platforms : Node.js, Firebase</p>
+            <div className="flex justify-center items-center flex-wrap gap-4">
+              <div className="w-24 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/node.png" alt="node" />
+              </div>
+              <div className="w-24  flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/firebase.png" alt="firebase" />
+              </div>
+            </div>
           </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/js.png" alt="js" />
+          <div>
+            <p>
+              Frameworks and Libraries : React.js, Next.js, Express.js,
+              Bootstrap, TailwindCSS
+            </p>
+            <div className="flex justify-center items-center flex-wrap gap-4">
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/bootstrap.png" alt="bootstrap" />
+              </div>
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/react.jpg" alt="react" />
+              </div>
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/next.png" alt="next" />
+              </div>
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/express.png" alt="express" />
+              </div>
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/tailwind.png" alt="tailwind" />
+              </div>
+            </div>
           </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/bootstrap.png" alt="bootstrap" />
+          <div>
+            <p>Database : MongoDB</p>
+            <div className="flex justify-center items-center flex-wrap gap-4">
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/mongodb.png" alt="mongodb" />
+              </div>
+            </div>
           </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/react.jpg" alt="react" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/mongodb.png" alt="mongodb" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/node.png" alt="node" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/next.png" alt="next" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/express.png" alt="express" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/firebase.png" alt="firebase" />
-          </div>
-          <div className="w-24 h-32 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
-            <img src="../assets/images/tailwind.png" alt="tailwind" />
+          <div>
+            <p>Project Management : Github</p>
+            <div className="flex justify-center items-center flex-wrap gap-4">
+              <div className="w-24 h-28 flex justify-center items-center overflow-hidden bg-slate-200 shadow shadow-slate-200 rounded-lg hover:scale-105">
+                <img src="../assets/images/github.png" alt="github" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +132,10 @@ export const Presentation = () => {
               width={100}
             />
             <div className="flex-col ">
-              <h4 className="text-lg underline decoration-amber-300">React.js/Firebase Restaurant App</h4>
+              <h4 className="text-lg underline decoration-amber-300">
+                React.js/Firebase Restaurant App
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
               <Link
                 target="_blank"
                 className="hover:text-white hover:font-semibold"
@@ -119,7 +152,10 @@ export const Presentation = () => {
               width={100}
             />
             <div className="flex-col ">
-              <h4 className="text-lg underline decoration-amber-300">API/React.js Dashboard</h4>
+              <h4 className="text-lg underline decoration-amber-300">
+                API/React.js Dashboard
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
               <Link
                 target="_blank"
                 className="hover:text-white hover:font-semibold"
@@ -136,7 +172,10 @@ export const Presentation = () => {
               width={100}
             />
             <div className="flex-col ">
-              <h4 className="text-lg underline decoration-amber-300">CRUD/DOM Web App</h4>
+              <h4 className="text-lg underline decoration-amber-300">
+                CRUD/DOM Web App
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
               <Link
                 target="_blank"
                 className="hover:text-white hover:font-semibold"
@@ -153,7 +192,10 @@ export const Presentation = () => {
               width={100}
             />
             <div className="flex-col ">
-              <h4 className="text-lg underline decoration-amber-300">HTML/CSS Landing Page</h4>
+              <h4 className="text-lg underline decoration-amber-300">
+                HTML/CSS Landing Page
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
               <Link
                 target="_blank"
                 className="hover:text-white hover:font-semibold"
@@ -164,6 +206,26 @@ export const Presentation = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className="text-center">
+        <h3 className=" my-2 font-bold text-xl text-amber-300">MY CONTACT</h3>
+          <p>Email : vincent.mayer.1808@gmail.com</p>
+        <div className="flex justify-center items-center flex-wrap gap-4">
+          <Link
+            href="https://linkedin.com/in/vincent-mayer"
+            target="_blank"
+            className="w-8 hover:scale-110"
+          >
+            <LinkedInIcon />
+          </Link>
+          <Link
+            href="https://github.com/vincentmayer1808"
+            target="_blank"
+            className="w-8 hover:scale-110"
+          >
+            <GitHubIcon />
+          </Link>
+        </div>
       </div>
     </div>
   );
