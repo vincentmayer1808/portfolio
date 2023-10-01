@@ -1,19 +1,9 @@
 "use client";
 import "./sidebar.css";
 import { Sidebar } from "flowbite-react";
-import {
-  HiGlobeAlt,
-  HiChartPie,
-  HiInbox,
-  HiHome,
-  HiUser,
-  HiViewBoards,
-} from "react-icons/hi";
+import { HiGlobeAlt, HiHome, HiUser } from "react-icons/hi";
 import { Contact } from "../Contact";
-// fushia : #c026d3 => fuchsia-600
-// bg : #082f49 => sky-950
-// cyan-300 => #67e8f9
-// amber-300 => #fcd34d
+
 const Sidenavbar = () => {
   return (
     <>
