@@ -196,8 +196,8 @@ export const Presentation = () => {
             <Image
               src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181481/react-js-firebase-restaurant-app-sobresaliente_hd5jm7.webp"
               alt=" react badge"
-              width={160}
-              height={160}
+              width={100}
+              height={100}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">
@@ -217,8 +217,8 @@ export const Presentation = () => {
             <Image
               src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181470/api-react-js-dashboard-sobresaliente_qs3d0t.webp"
               alt="API badge"
-              width={160}
-              height={160}
+              width={100}
+              height={100}
             />
             <div className="flex-col ">
               <h4 className="text-lg underline decoration-amber-300">

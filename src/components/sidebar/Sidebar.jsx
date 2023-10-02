@@ -10,8 +10,8 @@ export const Sidenavbar = () => {
     <>
       <button
         datadrawertarget="default-sidebar"
-        datadrawertoggle="default-sidebar"
-        aria_controls="Sidebar"
+        datadrawershow="default-sidebar"
+        aria_controls="default-sidebar"
         type="button"
         className="fixed inline-flex items-center p-2 mt-2 ml-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
       >
@@ -34,12 +34,13 @@ export const Sidenavbar = () => {
       <Sidebar
         id="default-sidebar"
         className="bg-sky-950 fixed z-40 left-0 w-64 border-r-2 border-amber-300 h-screen text-cyan-300 transition-transform -translate-x-full sm:translate-x-0 "
+        aria_labelledby="drawer-navigation-label"
       >
         <Sidebar.Logo
           href="/"
           className=" bg-sky-950 border-b-2 border-amber-300 text-cyan-300"
         >
-          <p className="hover:text-fuchsia-600 mb-2">Vincent Mayer</p>
+          <p id="drawer-navigation-label" className="hover:text-fuchsia-600 mb-2">Vincent Mayer</p>
         </Sidebar.Logo>
         <Sidebar.Items>
           <Sidebar.ItemGroup className="bg-sky-950 text-cyan-300">
