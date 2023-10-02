@@ -23,6 +23,7 @@ export const About = () => {
                 className="h-48 w-auto md:h-full md:w-48"
                 width={160}
                 height={190}
+                priority={true}
               />
             </div>
             <div className="flex flex-col items-center justify-center gap-2 p-2">
