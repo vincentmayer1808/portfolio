@@ -26,7 +26,7 @@ export const DefaultCarousel = () => {
               Landing Page for Kinesiologie SM
             </h4>
             <p className="font-normal text-white">
-              This Landing Page, made for Kinesiologie SM, is entirely made with Next.js and Firebase. Enjoy my first Web App in French, all the way from the home page to the services. Further on you'll see appear a blog and a reservation system too!
+              This Landing Page, made for Kinesiologie SM, is entirely made with Next.js and Firebase. Enjoy my first Web App in French, all the way from the home page to the services. Further on you&#8217;ll see appear a blog and a reservation system too!
             </p>
             <Link
               href="https://kinesiologiesm.com"
