@@ -16,6 +16,32 @@ export const DefaultCarousel = () => {
             <div className="flex justify-center">
               <Image
                 className="rounded-t-lg w-1/2"
+                src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1697993530/Kinesiologie_SM_p1eqtk.webp"
+                alt="website shot"
+                width={300}
+                height={300}
+              />
+            </div>
+            <h4 className=" text-2xl font-bold tracking-tight">
+              Landing Page for Kinesiologie SM
+            </h4>
+            <p className="font-normal text-white">
+              This Landing Page, made for Kinesiologie SM, is entirely made with Next.js and Firebase. Enjoy my first Web App in French, all the way from the home page to the services. Further on you'll see appear a blog and a reservation system too!
+            </p>
+            <Link
+              href="https://kinesiologiesm.com"
+              target="_blank"
+              className="hover:text-white"
+            >
+              kinesiologiesm.com
+            </Link>
+          </div>
+        </div>
+        <div>
+          <div className="bg-sky-950 flex flex-col gap-2 justify-center items-center p-3 bg-sky-900 text-cyan-300 rounded-lg border-2 border-amber-300 shadow-2xl shadow-amber-300 absolute block w-2/3 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <div className="flex justify-center">
+              <Image
+                className="rounded-t-lg w-1/2"
                 src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1695472314/PsicologialosRios_zwhpcz.png"
                 alt="website shot"
                 width={300}

@@ -12,7 +12,7 @@ export const Presentation = () => {
         <h2 className="font-bold text-xl text-center text-amber-300">My XP</h2>
         <p className="text-left mb-2">
           As a recently graduated Wed Developer Full Stack, I discovered a
-          personal passion for coding that motivate me to learn more about
+          personal passion for coding that motivates me to learn more about
           programming web applications. I like to design special features and
           otpimized personal utilies so the application is reliable and easy to
           use.
@@ -36,9 +36,9 @@ export const Presentation = () => {
           </p>
         </div>
         <p className="text-left mb-2">
-          I know everything is posible and I am ready to prove it. If I don,t
+          I know everything is posible and I&#8217;m ready to prove it. If I don&#8217;t
           know, I learn it and if it looks like a far away dream, I make it
-          reality! You want to take your business at the next Web Level? I am
+          reality! You want to take your business at the next Web Level? I&#8217;m
           here to help!
         </p>
         <div className="flex gap-2 justify-center">

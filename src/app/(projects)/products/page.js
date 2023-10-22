@@ -23,7 +23,7 @@ const page = () => {
       </section>
       <div className="pb-3">
         <p className="font-semibold text-lg text-amber-300 text-center">
-          Remember, everything is possible! Lets just talk about it!
+          Remember, everything is possible! Let&#8217;s just talk about it!
         </p>
       </div>
     </div>

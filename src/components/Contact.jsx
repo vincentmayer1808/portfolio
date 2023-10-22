@@ -70,7 +70,7 @@ export const Contact = () => {
           <div className="bg-sky-950 p-2">
            
               <p className="text-center font-bold text-lg text-amber-300 mb-2">
-                Tell me about your project and lets see how I can help you!
+                Tell me about your project and let&#8217;s see how I can help you!
               </p>
             <div >
               <form className="flex-col flex items-center justify-center gap-2">

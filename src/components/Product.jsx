@@ -26,7 +26,7 @@ export const Product = () => {
           </div>
           <div className="col-span-2 ">
             <p>
-              At this level, your business get a personal page where the world
+              At this level, your business gets a personal page where the world
               can see you and get in touch with you!
             </p>
           </div>
