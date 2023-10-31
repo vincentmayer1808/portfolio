@@ -1,5 +1,4 @@
 'use client'
-import Head from 'next/head'
 import Script from 'next/script'
 
 const Gtag = () => {
@@ -14,7 +13,7 @@ const Gtag = () => {
              function gtag(){dataLayer.push(arguments)}
             gtag('js', new Date());
 
-            gtag('config', ${process.env.GTAG});
+            gtag('config', G-ZPLG7K317G);
             `}
             </Script>
        </>
