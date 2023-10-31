@@ -4,44 +4,53 @@ import { Modal } from "flowbite-react";
 import "animate.css"
 
 import addToDB from "../helpers/addToDB";
-import useContactForm from "../hooks/useContactForm";
 import axios from "axios";
 
 
 export const Contact = () => {
+  const initForm = {
+    username: "",
+    email: "",
+    message: "",
+  }
 
- 
-  const { values, onChangeForm } = useContactForm()
+  const [values, setValues] = useState(initForm)
 
   const [openModal, setOpenModal] = useState("");
   const props = { openModal, setOpenModal };
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const onChangeForm = ({ target }) => {
+    setValues({
+      ...values,
+      [target.id]: target.value,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-  
+
     const { username, email, message } = values;
     if (username === "" || email === "" || message === "") {
       window.alert("Please, fill all fields!");
     } else {
       try {
-        console.log(values)
+
         await addToDB(values);
-         await axios.post("http://localhost:3000/api/api",{
+        await axios.post("http://localhost:3000/api/api", {
           email,
           username,
           message
-         })
+        })
 
-        // window.alert("I will respond as soon as posible, thanks for contacting me!");
+        window.alert("I will respond as soon as posible, thanks for contacting me!");
       } catch (err) {
         console.log(err)
       }
     }
-    useContactForm()
+    setValues(initForm)
     setIsLoading(false);
 
   }

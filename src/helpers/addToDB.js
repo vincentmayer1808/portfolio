@@ -3,7 +3,6 @@ const { db } = require("../firebase/firebase");
 const addToDB = async (info) => {
     try {
       await db.collection("contact").add(info);
-      console.log("message sent");
 
     } catch (err) {
       // console.log(err);

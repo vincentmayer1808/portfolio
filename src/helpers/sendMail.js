@@ -25,10 +25,7 @@ try {
     await transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
             throw new Error(err)
-        } else {
-            console.log('message sent')
-           
-        }
+        } 
     })
 } catch (err){
     console.log(err)
