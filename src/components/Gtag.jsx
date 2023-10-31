@@ -13,7 +13,7 @@ const Gtag = () => {
              function gtag(){dataLayer.push(arguments)}
             gtag('js', new Date());
 
-            gtag('config', G-ZPLG7K317G);
+            gtag('config', 'G-ZPLG7K317G');
             `}
             </Script>
        </>
