@@ -44,15 +44,14 @@ export const Contact = () => {
           username,
           message
         })
-
         window.alert("I will respond as soon as posible, thanks for contacting me!");
       } catch (err) {
-        console.log(err)
+        // console.log(err)
+        window.alert("There has been an error, please try again soon!");
       }
     }
     setValues(initForm)
     setIsLoading(false);
-
   }
 
   return (
