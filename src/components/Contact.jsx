@@ -38,7 +38,7 @@ export const Contact = () => {
     } else {
       try {
         await addToDB(values);
-        await axios.post(`https://vincentmayer-portfolio.vercel.app/api/api`, {
+        await axios.post(`https://www.vincentmayer-portfolio.vercel.app/api/api`, {
           email,
           username,
           message
