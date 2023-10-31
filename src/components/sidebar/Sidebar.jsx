@@ -4,6 +4,7 @@ import { Sidebar } from "flowbite-react";
 import { HiGlobeAlt, HiHome, HiUser } from "react-icons/hi";
 import { Contact } from "../Contact";
 import { Footer } from "../Footer";
+import { Budget } from "../Budget";
 
 export const Sidenavbar = () => {
   return (
@@ -68,6 +69,7 @@ export const Sidenavbar = () => {
           </Sidebar.ItemGroup>
           <Sidebar.ItemGroup className="border-amber-300">
             <Contact />
+            <Budget/>
           </Sidebar.ItemGroup>
         </Sidebar.Items>
       </Sidebar>
