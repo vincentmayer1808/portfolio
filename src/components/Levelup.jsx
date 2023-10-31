@@ -10,11 +10,13 @@ export const Levelup = () => {
     email: "",
     consult: "",
   };
-  const [openModal, setOpenModal] = useState("");
-
-  const props = { openModal, setOpenModal };
   const [formState, setFormState] = useState(initForm);
+
+  const [openModal, setOpenModal] = useState("");
+  const props = { openModal, setOpenModal };
+  
   const [isLoading, setIsLoading] = useState(false);
+  
   const onChangeForm = ({ target }) => {
     setFormState({
       ...formState,
@@ -119,7 +121,7 @@ export const Levelup = () => {
                     />
                   </div>
                   <button
-                    className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300 hover:scale-105"
+                    className="flex items-center px-3 py-2 font-medium text-center text-white bg-fuchsia-600 disabled:bg-fuchsia-800 rounded-lg hover:ring-2 ring-amber-300 hover:shadow-lg hover:shadow-amber-300 hover:scale-105"
                     id="contactButton"
                     type="submit"
                     onClick={handleSubmit}
