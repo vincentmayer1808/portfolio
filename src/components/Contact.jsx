@@ -37,15 +37,17 @@ export const Contact = () => {
       window.alert("Please, fill all fields!");
     } else {
       try {
+        // https://www.vincentmayer-portfolio.vercel.app
+        // http://localhost:3000
         await addToDB(values);
-        await axios.post(`https://www.vincentmayer-portfolio.vercel.app/api/api`, {
+        await axios.post(`https://vincentmayer-portfolio.vercel.app/api/api`, {
           email,
           username,
           message
         })
         window.alert("I will respond as soon as posible, thanks for contacting me!");
       } catch (err) {
-        // console.log(err)
+        console.log(err)
         window.alert("There has been an error, please try again soon!");
       }
     }
