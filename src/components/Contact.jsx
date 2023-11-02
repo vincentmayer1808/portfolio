@@ -40,7 +40,7 @@ export const Contact = () => {
         // https://www.vincentmayer-portfolio.vercel.app
         // http://localhost:3000
         await addToDB(values);
-        await axios.post(`https://vincentmayer-portfolio.vercel.app/api/api`, {
+        await axios.post(`/api/api`, {
           email,
           username,
           message
