@@ -37,8 +37,7 @@ export const Contact = () => {
       window.alert("Please, fill all fields!");
     } else {
       try {
-        // https://www.vincentmayer-portfolio.vercel.app
-        // http://localhost:3000
+
         await addToDB(values);
         await axios.post(`/api/api`, {
           email,
