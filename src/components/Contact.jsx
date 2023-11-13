@@ -55,7 +55,7 @@ export const Contact = () => {
   }
 
   return (
-    <div className="flex flex-col flex-wrap items-center justify-center p-5 bg-black">
+    <div className="flex flex-col flex-wrap items-center justify-center p-5 bg-sky-950">
       <p className="text-amber-300 text-center font-bold">
         You want to schedule a meeting, gotta doubt or simply want to
         saludate?

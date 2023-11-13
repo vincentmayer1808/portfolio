@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { Sidenavbar } from "../components/sidebar/Sidebar";
+import { Sidenavbar } from "../components/Sidebar";
 import Script from "next/script";
 
 import Gtag from "../components/Gtag";

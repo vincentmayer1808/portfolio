@@ -3,7 +3,7 @@
 import { Carousel } from "flowbite-react";
 import { GitHubIcon } from "./Icons";
 import Link from "next/link";
-import { Levelup } from "./Levelup";
+import { Budget} from "./Budget";
 import Image from "next/image";
 
 export const DefaultCarousel = () => {
@@ -227,8 +227,8 @@ export const DefaultCarousel = () => {
         </div>
       </Carousel>
       <div className="flex flex-col justify-center items-center bg-sky-950 p-2 pb-6">
-        <p className="font-bold text-amber-300">Get something similar</p>
-        <Levelup />
+  
+        <Budget/>
       </div>
     </div>
   );

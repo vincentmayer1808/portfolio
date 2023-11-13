@@ -1,3 +1,6 @@
+Hey There! 
+Here is a description of my portfolio's project. If you want to, take a look at my coding!
+
 
 ## My Portfolio
 

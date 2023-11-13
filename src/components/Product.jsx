@@ -1,6 +1,6 @@
 import React from "react";
-import { Levelup } from "./Levelup";
 import"animate.css"
+import { Budget } from "./Budget";
 
 export const Product = () => {
   return (
@@ -31,7 +31,7 @@ export const Product = () => {
             </p>
           </div>
         </div>
-        <Levelup/> 
+        <Budget/> 
       </div>
       <div className="flex-col justify-center align-center border-4 border-amber-300 p-5 m-5 rounded-lg hover:bg-sky-900 hover:text-white hover:shadow-2xl hover:shadow-amber-300 hover:scale-105 animate__animated animate__fadeInRight">
         <h3 className="font-medium text-lg text-amber-300">MULTIPLE PAGES LEVEL</h3>
@@ -58,7 +58,7 @@ export const Product = () => {
             </p>
           </div>
         </div>
-        <Levelup/> 
+        <Budget/> 
       </div>
       <div className="flex-col justify-center align-center hover:text-white hover:bg-sky-900 border-4 border-amber-300 p-5 m-5 rounded-lg hover:shadow-2xl hover:shadow-amber-300 hover:scale-105 animate__animated animate__fadeInLeft">
         <h3 className="font-medium text-lg text-amber-300">E-COMMERCE LEVEL</h3>
@@ -85,7 +85,7 @@ export const Product = () => {
             </p>
           </div>
         </div>
-        <Levelup/> 
+        <Budget/> 
       </div>
     </div>
   );
