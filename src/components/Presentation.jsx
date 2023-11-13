@@ -194,6 +194,48 @@ export const Presentation = () => {
         <ul className="flex flex-wrap justify-center items-center gap-2">
           <li className="flex hover:scale-125 justify-center items-center">
             <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1699884318/developer-web-full-stack-sobresaliente_1_a1ayvv.webp"
+              alt="Full Stack badge"
+              width={100}
+              height={100}
+            />
+            <div className="flex-col ">
+              <h4 className="text-lg underline decoration-amber-300">
+               Full Stack Web Developer
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
+              <Link
+                target="_blank"
+                className="hover:text-white hover:font-semibold"
+                href="https://www.credly.com/badges/d484aea6-98c5-44d0-b247-2dcf4ae8b42d/public_url"
+              >
+                See Badge
+              </Link>
+            </div>
+          </li>
+          <li className="flex hover:scale-125 justify-center items-center">
+            <Image
+              src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1699884587/e-commerce-fullstack-app-with-mongo-express-react-js-y-node-js-sobresaliente_1_ltc72y.webp"
+              alt=" E-Commerce badge"
+              width={100}
+              height={100}
+            />
+            <div className="flex-col ">
+              <h4 className="text-lg underline decoration-amber-300">
+              E-Commerce Fullstack App with Mongo, Express, React.JS y Node.js
+              </h4>
+              <p>Certified by : Universidad Del Desarrollo</p>
+              <Link
+                target="_blank"
+                className="hover:text-white hover:font-semibold"
+                href="https://www.credly.com/badges/1ab07264-cc46-4e24-9e18-600b84978200/public_url"
+              >
+                See Badge
+              </Link>
+            </div>
+          </li>
+          <li className="flex hover:scale-125 justify-center items-center">
+            <Image
               src="https://res.cloudinary.com/dvowvfxfi/image/upload/v1696181481/react-js-firebase-restaurant-app-sobresaliente_hd5jm7.webp"
               alt=" react badge"
               width={100}
@@ -281,7 +323,7 @@ export const Presentation = () => {
       </div>
       <div className="text-center">
         <h3 className=" my-2 font-bold text-xl text-amber-300">MY CONTACT</h3>
-        <p>Email : vincent.mayer.1808@gmail.com</p>
+        <p>Email : vm.webdevservices@gmail.com</p>
         <div className="flex justify-center items-center flex-wrap gap-4">
           <Link
             href="https://linkedin.com/in/vincent-mayer"
